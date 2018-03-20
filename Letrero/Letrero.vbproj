@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{864EB775-0574-45F4-8ECE-539C22FB4A97}</ProjectGuid>
+    <ProjectGuid>{FC9B24CF-DF71-4DFB-80AC-D7BC0D02CAE6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>InterfazBienvenida.My.MyApplication</StartupObject>
-    <RootNamespace>InterfazBienvenida</RootNamespace>
-    <AssemblyName>InterfazBienvenida</AssemblyName>
+    <StartupObject>Letrero.My.MyApplication</StartupObject>
+    <RootNamespace>Letrero</RootNamespace>
+    <AssemblyName>Letrero</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>InterfazBienvenida.xml</DocumentationFile>
+    <DocumentationFile>Letrero.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>InterfazBienvenida.xml</DocumentationFile>
+    <DocumentationFile>Letrero.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,18 +47,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AgregarDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AgregarDatos\bin\Debug\AgregarDatos.exe</HintPath>
-    </Reference>
-    <Reference Include="DesplegarResultado, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DesplegarResultado\bin\Debug\DesplegarResultado.exe</HintPath>
-    </Reference>
-    <Reference Include="Letrero, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Letrero\bin\Debug\Letrero.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -84,11 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuBienvenida.vb">
+    <Compile Include="Mensaje.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuBienvenida.Designer.vb">
-      <DependentUpon>MenuBienvenida.vb</DependentUpon>
+    <Compile Include="Mensaje.Designer.vb">
+      <DependentUpon>Mensaje.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -108,8 +96,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MenuBienvenida.resx">
-      <DependentUpon>MenuBienvenida.vb</DependentUpon>
+    <EmbeddedResource Include="Mensaje.resx">
+      <DependentUpon>Mensaje.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -129,9 +117,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
